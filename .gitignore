@@ -24,3 +24,5 @@
 *.synctex.gz
 *.run.xml
 seminararbeit.pdf
+
+.vscode/
