@@ -36,7 +36,20 @@
 \begin{document}
 \pagenumbering{Roman}
 \input{titlepage.tex}
-
+\newpage
+\section*{Abkürzungsverzeichnis}
+\addcontentsline{toc}{section}{Abkürzungsverzeichnis}
+\begin{acronym}[BERT]
+    \acro{llm}[LLM]{Large Language Model}
+    \acroplural{llm}[LLMs]{Large Language Models}
+    \acro{nlp}[NLP]{Natural Language Processing}
+    \acro{ml}[ML]{Machine Learning}
+    \acro{ai}[AI]{Artificial Intelligence}
+    \acro{gpt}[GPT]{Generative Pre-trained Transformer}
+    \acro{bert}[BERT]{Bidirectional Encoder Representations from Transformers}
+    \acro{rnn}[RNN]{Recurrent Neural Network}
+    \acro{cnn}[CNN]{Convolutional Neural Network}
+\end{acronym}
 \newpage
 \tableofcontents
 \newpage
@@ -44,6 +57,7 @@
 \pagenumbering{arabic}
 
 \input{Kapitel/1_einleitung.tex}
+\acp{llm}
 
 \input{Kapitel/2_sprachmodelle.tex}
 
