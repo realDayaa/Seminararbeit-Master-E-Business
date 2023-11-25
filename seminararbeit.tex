@@ -37,6 +37,8 @@
 \pagenumbering{Roman}
 \input{titlepage.tex}
 \newpage
+\tableofcontents
+\newpage
 \section*{Abkürzungsverzeichnis}
 \addcontentsline{toc}{section}{Abkürzungsverzeichnis}
 \begin{acronym}[BERT]
@@ -50,8 +52,6 @@
     \acro{rnn}[RNN]{Recurrent Neural Network}
     \acro{cnn}[CNN]{Convolutional Neural Network}
 \end{acronym}
-\newpage
-\tableofcontents
 \newpage
 \setcounter{lastromanpage}{\value{page}} % Save the current page number
 \pagenumbering{arabic}
