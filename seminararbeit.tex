@@ -1,0 +1,78 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage{tabularx}
+\usepackage[left=3cm,top=2.5cm,right=3cm,bottom=2.5cm]{geometry}
+\usepackage[onehalfspacing]{setspace}
+\usepackage[style=authoryear, backend=biber,maxbibnames=2, date=year, isbn=false, doi=false, url=false, eprint=true]{biblatex}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage{csquotes}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{eurosym}
+\usepackage{float}
+\usepackage{acronym}
+\usepackage[hidelinks]{hyperref}
+\usepackage{adjustbox}
+\usepackage{titlesec}
+\titleformat{\section}
+{\normalfont\fontsize{16}{15}\bfseries}{\thesection}{1em}{} 
+\titleformat{\subsection}
+{\normalfont\fontsize{14}{15}\bfseries}{\thesubsection}{1em}{}
+\usepackage{rotating}
+\usepackage[format=plain,
+            labelfont={it},
+            textfont=it]{caption}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % sets both header and footer to nothing
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot{}
+\fancyfoot[R]{\thepage}
+
+\addbibresource{literatur.bib}
+
+\begin{document}
+\pagenumbering{Roman}
+\input{titlepage.tex}
+
+
+\newpage
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+\section{Einleitung}
+
+\section{Sprachmodelle und ihre Bedeutung}
+\subsection{Abgrenzung Sprachmodelle}
+\newpage
+\subsection{Einsatzgebiete}
+In diversen Anwendungsfeldern finden Language Model (LM)-Technologien vielfältige Verwendungsmöglichkeiten. Yang et al. haben sechs unterschiedliche Anwendungsszenarien identifiziert\footcite[Vgl.][S. 6 ff.]{yang2023harnessing}, darunter insbesondere solche im Bereich des Natural Language Understanding (NLU). Hierzu zählen beispielsweise Textklassifikationen, die einen Schwerpunkt auf die semantische Erfassung von natürlicher Sprache legen. Ebenfalls relevant sind Generierungsaufgaben, die sich auf die automatisierte Erzeugung von sprachlichen Inhalten beziehen. Des Weiteren lassen sich wissensintensive Aufgaben als bedeutsames Anwendungsfeld konstatieren, bei dem die Modelle dazu dienen, umfangreiche Wissensbestände zu verarbeiten und zu extrahieren.
+\begin{enumerate}
+    \item Verschiedene vortrainierte Sprachmodelle \footcite{zhou2023comprehensive}
+    \item Anzahl Jahr für Jahr steigend \footcite{naveed2023comprehensive}
+    \item Beispiel Bert für Optimierung von Suchanfragen \footcite{devlin2018bert}
+\end{enumerate}
+\printbibliography
+
+
+
+\newpage
+\section{Notwendigkeit der Modellauswahl}
+Die Anzahl
+
+\section{Benchmarking-Konzepte}
+Ein neuerer Ansatz stellt das von Google entwickelte Bidirectional Encoder Representations from Transformers (BERT) dar. 
+
+\section{Aktuelle Rankings und Forschungsstand}
+
+\section{Schlussbetrachtung}
+
+\newpage
+\pagenumbering{Roman}
+\setcounter{page}{3}
+\printbibliography
+
+\end{document}
