@@ -1,1 +1,33 @@
 \section{Einleitung}
+Seit der Einführung des Chatbots ChatGPT von OpenAI im November 2022\footcite[Vgl.][]{ChatGPT-announcement} hat das Interesse der Allgemeinheit an künstlicher Intelligenz stetig zugenommen. \footcite[Vgl.][]{google_trends_ki}
+So ist es nicht verwunderlich, dass auch andere Technologieanbieter wie Meta oder Google auf die große Nachfrage reagieren und ihre eigenen Sprachmodelle Bard bzw. LLaMA entwickeln.
+Im Zuge dieser Entwicklung hat sich ein umfassender Forschungszweig herausgebildet, der sich mit der Frage beschäftigt, wie genau \acp{llm} (Language Models) miteinander verglichen werden können.
+Diese Frage wird umso relevanter, da die Anwendungsgebiete von Sprachmodellen vielfältig sind und von Textgenerierung über maschinelles Übersetzen bis hin zum Zusammenfassen von Dokumenten reichen.
+Die zentrale Herausforderung besteht darin, objektive Vergleichsparameter und Evaluierungsmethoden zu entwickeln, die es ermöglichen, die Leistungsfähigkeit dieser Modelle in verschiedenen Anwendungsszenarien zuverlässig zu beurteilen.
+Deshalb soll diese Arbeit die Forschungsfrage aufgreifen, wie \acp{llm} effektiv miteinander verglichen werden können.
+
+Diese Arbeit verfolgt daher zwei zentrale Ziele. Zum einen soll herausgearbeitet werden, inwiefern sich verschiedene \acp{llm} voneinander unterscheiden, um so eine Grundlage für die Beantwortung der Forschungsfrage zu schaffen.
+Zum anderen soll Benchmarking allgemein als Methode zur Beurteilung der Leistungsfähigkeit von \acp{llm} vorgestellt werden.
+Dabei liegt ein besonderer Fokus darauf, verschiedene spezifische Benchmarks einzuführen, um die Performance der Modelle zu messen.
+
+Dazu soll die Arbeit wie folgt gegliedert werden.
+Im ersten Abschnitt soll zunächst ein Überblick über die grobe Funktionsweise und Anwendungsgebiete von \acp{llm} gegeben werden.
+Mit diesem Wissen kann anschließend im zweiten Kapitel erörtert werden, worin die Unterschiede bei aktuellen \acp{llm} liegen.
+Mit diesem Wissen kann sich dann im dritten Kapitel mit der eigentlichen Forschungsfrage beschäftigt werden.
+Dabei soll zunächst Benchmarking als generelle Methode zur Beurteilung der Leistungsfähigkeit vorgestellt werden.
+Anschließend sollen verschiedene heute relevante Benchmarks vorgestellt werden, die sich für die Beurteilung von \acp{llm} eignen.
+Dabei sollen sowohl die Funktionsweise als auch Vor- und Nachteile der jeweiligen Benchmarks aufgezeigt werden.
+Im vierten Kapitel sollen die in den vorherigen Kapiteln erarbeiteten Erkenntnisse zusammengefasst werden, indem mithilfe aktueller Rankings von \acp{llm} die Performance der Modelle anhand der vorgestellten Benchmarks verglichen wird.
+Abschließend soll im fünften Kapitel ein Fazit gezogen werden, indem die Forschungsfrage beantwortet und ein Ausblick auf zukünftige Entwicklungen gegeben wird.
+
+Die Arbeit an sich stellt also eine reine Literaturarbeit dar, die sich auf die Auswertung von bereits veröffentlichten Forschungsergebnissen stützt.
+Dafür wurde Literatur genutzt, die sich mit der Funktionsweise von \acp{llm} beschäftigt, sowie mit der Frage, wie diese Modelle miteinander verglichen werden können, und bis Oktober 2023 veröffentlicht wurde.
+Konkret wurden dafür die Datenbanken Google Scholar und die ACM Digital Library genutzt.
+Es wurde der folgende Suchstring bei der ACM Digital Library verwendet:
+\begin{verbatim}
+    "query": {AllField:("large language model?") 
+              AND AllField: ("benchmark?" "use case?" "performance")} 
+    "filter": {E-Publication Date: (* TO 10/31/2023)},
+              {ACM Content: DL}
+\end{verbatim}
+Dieser wurde entsprechend für Google Scholar angepasst.
