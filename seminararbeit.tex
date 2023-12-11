@@ -34,9 +34,9 @@
 \newcounter{lastromanpage} 
 
 \begin{document}
-\pagenumbering{Roman}
 \input{titlepage.tex}
 \newpage
+\pagenumbering{Roman}
 \tableofcontents
 \newpage
 \section*{Abkürzungsverzeichnis}
@@ -45,12 +45,10 @@
     \acro{llm}[LLM]{Large Language Model}
     \acroplural{llm}[LLMs]{Large Language Models}
     \acro{nlp}[NLP]{Natural Language Processing}
-    \acro{ml}[ML]{Machine Learning}
-    \acro{ai}[AI]{Artificial Intelligence}
+    \acro{nlu}[NLU]{Natural Language Understanding}
+    \acro{ki}[KI]{Künstliche Intelligenz}
     \acro{gpt}[GPT]{Generative Pre-trained Transformer}
     \acro{bert}[BERT]{Bidirectional Encoder Representations from Transformers}
-    \acro{rnn}[RNN]{Recurrent Neural Network}
-    \acro{cnn}[CNN]{Convolutional Neural Network}
 \end{acronym}
 \newpage
 \setcounter{lastromanpage}{\value{page}} % Save the current page number
@@ -59,8 +57,6 @@
 \input{Kapitel/1_einleitung.tex}
 
 \input{Kapitel/2_sprachmodelle.tex}
-
-\input{Kapitel/3_modellauswahl.tex}
 
 \input{Kapitel/4_Konzepte.tex}
 
@@ -71,6 +67,8 @@
 \newpage
 \pagenumbering{Roman}
 \setcounter{page}{\value{lastromanpage}} % Restore the saved page number
+\input{./erklaerungen.tex}
+\newpage
 \printbibliography
 
 \end{document}
