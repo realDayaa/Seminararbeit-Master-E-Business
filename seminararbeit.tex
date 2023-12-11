@@ -69,6 +69,7 @@
 \setcounter{page}{\value{lastromanpage}} % Restore the saved page number
 \input{./erklaerungen.tex}
 \newpage
-\printbibliography
+\phantomsection % To make sure the hyperref package jumps to the correct page
+\printbibliography[title={Literaturverzeichnis}, heading=bibintoc]
 
 \end{document}
